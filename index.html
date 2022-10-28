@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+
+<body>
+
+  <main class="notifications">
+
+    <header class="header">
+      <h1 class="header-title">Notifications <span class="notifications-number"></span></h1>
+
+      <a href="#" class="mark-all-read">Mark all as read</a>
+    </header>
+
+    <section class="notifications-section">
+
+      <ul class="notifications-list">
+        <li class="notification unread">
+          <div class="profile-picture">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="Foto de perfil">
+          </div>
+          <div class="content">
+            <div class="notification-text">
+              <p>
+                <a href="#"><span class="username">Mark Webber</span></a>
+                reacted to your recent post <a href="#" class="post">My first tournament today!</a>
+                <span class="unread-icon unread"></span>
+              </p>
+              <time>1m ago</time>
+            </div>
+          </div>
+        </li>
+
+        <li class="notification unread">
+          <div class="profile-picture">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="Foto de perfil">
+          </div>
+
+          <div class="content">
+            <div class="notification-text">
+              <p>
+                <a href="#"><span class="username">Angela Gray</span></a>
+                followed you
+                <span class="unread-icon unread"></span>
+              </p>
+              <time>5m ago</time>
+            </div>
+          </div>
+        </li>
+
+        <li class="notification unread">
+          <div class="profile-picture">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="Foto de perfil">
+          </div>
+
+          <div class="content">
+            <div class="notification-text">
+              <p>
+                <a href="#"><span class="username">Jacob Thompson</span></a> has joined your group <a href="#" class="group">Chess Club</a>
+                <span class="unread-icon unread"></span>
+              </p>
+              <time>1 day ago</time>
+            </div>
+          </div>
+        </li>
+
+        <li class="notification unread">
+          <div class="profile-picture">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Foto de perfil">
+          </div>
+
+          <div class="content">
+            <div class="notification-text">
+              <p>
+                <a href="#"><span class="username">Rizky Hasanuddin</span></a>
+                sent you a private message
+                <span class="unread-icon unread"></span>
+              </p>
+              <time>5 days ago</time>
+            </div>
+
+            <div class="private-message">
+              <a href="#">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+              I'm already having lots of fun and improving my game.
+            </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="notification unread">
+          <div class="profile-picture">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="Foto de perfil">
+          </div>
+
+          <div class="content">
+            <div class="notification-text">
+              <p>
+                <a href="#"><span class="username">Kimberly Smith</span></a>
+                commented on your picture
+                <span class="unread-icon unread"></span>
+              </p>
+              <time>1 week ago</time>
+            </div>
+          </div>
+
+          <div class="inner-profile-picture">
+            <a href="#"><img src="./assets/images/image-chess.webp" alt="Foto de perfil do comentário"></a>
+          </div>
+        </li>
+
+        <li class="notification unread">
+          <div class="profile-picture">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="Foto de perfil">
+          </div>
+
+          <div class="content">
+            <div class="notification-text">
+              <p>
+                <a href="#"><span class="username">Nathan Peterson</span></a>
+                reacted to your recent post <a href="#" class="post">5 end-game strategies to
+                increase your win rate</a>
+                <span class="unread-icon unread"></span>
+              </p>
+              <time>2 weeks ago</time>
+            </div>
+          </div>
+        </li>
+
+        <li class="notification unread">
+          <div class="profile-picture">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="Foto de perfil">
+          </div>
+
+          <div class="content">
+            <div class="notification-text">
+              <p>
+                <a href="#"><span class="username">Anna Kim</span></a>
+                left the group <a href="#" class="group">Chess Club</a>
+                <span class="unread-icon unread"></span>
+              </p>
+              <time>2 weeks ago</time>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/georgecarvalho">George Sanders</a>.
+  </div>
+
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>

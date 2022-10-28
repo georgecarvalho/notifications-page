@@ -1,0 +1,150 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    background-color: hsl(210, 60%, 98%);
+    color: hsl(219, 14%, 63%);
+}
+
+body a{
+    color: hsl(219, 14%, 63%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body p{
+    line-height: 1.5;
+}
+
+.notifications{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    margin: 3% auto;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.notifications .header-title{
+    font-size: larger;
+    color: #000000;
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+
+.notifications .mark-all-read:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.notifications .username{
+    color: #000000;
+    margin-right: 3px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.notifications-number{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 5px;
+    display: inline-block;
+    width: 18px;
+    padding: 2px 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.notification{
+    display: flex;
+    align-items: flex-start;
+}
+
+.content{
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notifications .notification.unread{
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 5px;
+}
+
+.notifications .unread-icon.unread::after{
+    content: "\2022";
+    color: hsl(1, 90%, 64%);
+}
+
+.notification .profile-picture img,
+.notification .inner-profile-picture img{
+    width: 34px;
+    padding: 10px;
+}
+
+.inner-profile-picture{
+    margin-left: auto;
+}
+
+.notification time{
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.notifications .private-message{
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid hsl(211, 68%, 94%);
+    margin-top: 10px;
+    margin-right: 2%;
+}
+
+.notifications .private-message:hover{
+    background-color: hsl(205, 33%, 90%);         
+}
+
+.notification-text .group{
+    color: hsl(219, 85%, 26%);
+}
+
+.notification-text .post{
+    color: hsl(219, 12%, 42%);
+}
+
+.notification-text .post:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.notification-text .group,
+.notification-text .post{
+    margin: 0 3px;
+}
+
+.notifications .header-title,
+.notifications .username,
+.notification-text .group,
+.notification-text .post{
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (max-width: 800px){
+    .notifications{
+        background-color: hsl(210, 60%, 98%);
+        width: 100%;
+        box-shadow: none;
+    }
+}
