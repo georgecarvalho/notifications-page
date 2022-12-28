@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Unread](./assets/images/unread.jpg)
-![Read](./assets/images/read.jpg)
+![Unread](/assets/images/unread.jpg)
+![Read](/assets/images/read.jpg)
 
 ### Links
 
