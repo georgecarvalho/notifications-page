@@ -26,24 +26,24 @@ Users should be able to:
 
 ### Screenshot
 
-![Unread](./unread.jpg)
-![Read](./read.jpg)
+![Unread](./assets/unread.jpg)
+![Read](./assets/read.jpg)
 
 ### Links
 
-- [Solution URL:](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-X_8KalLSSp)
-- [Live Site URL:](https://georgecarvalho.github.io/notifications-page/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-X_8KalLSSp](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-X_8KalLSSp)
+- Live Site URL: [https://georgecarvalho.github.io/notifications-page/](https://georgecarvalho.github.io/notifications-page/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Vanilla JavaScript
+- JavaScript
 
 ### What I learned
 
-O ícone de "não lido" foi gerado através da pseudo-classe **::after**, que adiciona algum conteúdo após o elemento indicado no seletor. Sobre o comportamento de marcar as notificações como lidas, foi adicionado um **EventListener** que espera um **click** em cada elemento com a classe **.notification**. Esses elementos são as divs HTML que possuem o conteúdo de cada notificação. Ao serem clicados, a função **markAsRead** é chamada, removendo a classe 'unread'.
+The `unread` icon was generated through the `::after` pseudo-class, which adds some content after the element in the selector. For the function of marking notifications as read, an `EventListener` that expects a `click` was added on each element with the `.notification` class. These elements are the HTML divs that contains the content of each notification. When they are clicked, the `markAsRead` function is called, removing the `.unread` class from it.
 
 ```css
 .notifications .unread-icon.unread::after{
